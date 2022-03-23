@@ -1,0 +1,18 @@
+<body>
+<center><h1>login here access data</h1><hr/><br/><br/>
+    <form method="POST" class="post_form" action="/login/">
+        {% csrf_token %}
+        <U><h3>login here</h3></U><br/>
+        <table>
+            <tr>
+            <td>Uname:</td><td><input type="text" name="Uname" placeholder="enter  Uname here" class="name"></td>
+            </tr>
+            <tr>
+               <td>password:</td><td><input type="password" name="password" placeholder="enter  password here" class="name"></td>
+            </tr>
+        </table><br/><br/>
+        <button type="submit">Login</button>
+    </form>
+</center>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<body>
+<h1>Test details table</h1><hr/><hr/><br/><br/>
+<table border="2px">
+    <tr>
+        <th>name</th>
+        <th>branch</th>
+        <th>address</th>
+        <th>phoneno</th>
+
+    </tr>
+{% for i in empdata %}
+    <tr>
+        <td>{{i.name}}</td>
+        <td>{{i.branch}}</td>
+        <td>{{i.address}}</td>
+        <td>{{i.phoneno}}</td>
+
+        <td>
+            <a href="/edit/{{i.name}}">Edit</a> &nbsp <a href="/delete/{{i.name}}">Delete</a>
+        </td>
+    </tr>
+{% endfor %}
+</table><br/><br/>
+<a href="/logout/"><button type="button">logout</button></a><br/><br/>
+<a href="/create/"><button type="button">Create</button></a>
+</body>
+</html>
